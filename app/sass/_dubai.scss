@@ -1,0 +1,381 @@
+@import "vars";
+
+.header {
+	width: 100%;
+	min-height: 745px;
+	background: url("../img/dubai-landing/background-header.png") center no-repeat;
+	background-size: cover;
+	&__padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&__logo {
+		margin-top: 65px;
+		margin-left: -20px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: row;
+		&--publish {
+			font-family: 'museo_sans_cyrl700';
+			margin-top: 97px;
+			color: #d5d5d5;
+			font-size: 8px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 8.52px;
+		}
+	}
+	&__content-sec {
+		float: right;
+		margin-right: 120px;
+		margin-top: 135px;
+		font-family: 'proxima_novasemibold';
+		color: $white;
+		&--one {
+			font-size: 25px;
+			font-weight: 400;
+		}
+		&--second {
+			font-size: 20px;
+			line-height: 6px;
+			font-weight: 400;
+			margin-left: 20px;
+		}
+	}
+}
+
+.content__dev {
+	min-height: 1600px;
+	background: $black;
+	position: relative;
+	padding: 140px 0;
+	&:before {
+		content: url("../img/dubai-landing/round.png");;
+		position: absolute;
+		left: -6%;
+		top: 0;
+		width: 500px;
+		z-index: 2;
+	}
+
+	&:after {
+		content: url("../img/dubai-landing/big-triangle.png");
+		position: absolute;
+		right: 0;
+		bottom: -8px;
+		z-index: 2;
+	}
+	&--main {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 3;
+		background: url("../img/dubai-landing/back-works.png") center 0px no-repeat;
+	}
+
+	&--main-one {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&--first-content {
+		position: relative;
+		z-index: 10;
+		color: $white;
+	}
+
+	&--second-content {
+		position: relative;
+		z-index: 10;
+		color: $white;
+	}
+
+	&--first-header {
+		font-family: 'proxima_novathin';
+		font-size: 56px;
+		font-weight: 400;
+		line-height: 60px;
+	}
+
+	&--first-paragraph {
+		font-family: 'proxima_nova_ltlight';
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+		margin-top: 50px;
+	}
+
+	&--sec-paragraph {
+		font-family: 'proxima_nova_ltlight';
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+		margin-top: 30px;
+	}
+
+	&--first-numbers {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 150px;
+		justify-content: space-between;
+		max-width: 460px;
+	}
+
+	&--first-numbers-two {
+		margin-top: -40px;
+	}
+
+	&--first-numbers-content {
+		color: #515151;
+		font-family: 'proxima_novaregular';
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+	}
+
+	&--first-numbers-number {
+		color: $white;
+		font-family: 'proxima_novathin';
+		font-size: 116px;
+		font-weight: 100;
+		line-height: 0.8;
+		margin-bottom: 0;
+	}
+
+	&--second-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&--second-one {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 500px;
+	}
+
+	&--second-sec {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 280px;
+		justify-content: space-between;
+		width: 500px;
+	}
+
+	&--second-image-one {
+		margin-top: -45px;
+
+	}
+
+	&--second-content-one {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--second-image-two {
+		margin-top: -45px;
+	}
+
+	&--second-content-two {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--main-sec {
+		position: relative;
+		z-index: 10;
+		color: $white;
+	}
+
+	&--publish {
+		text-align: center;
+		margin-top: 200px;
+	}
+
+	&--publish-header {
+		font-family: 'proxima_novathin';
+		font-size: 56px;
+		font-weight: 400;
+		line-height: 60px;
+	}
+
+	&--publish-content {
+		font-family: 'proxima_nova_ltlight';
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+		max-width: 744px;
+		margin: 15px auto;
+		word-wrap: break-word;
+	}
+
+	&--icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&--icons-content {
+		display: flex;
+		flex-direction: row;
+		margin-top: 30px;
+		align-items: center;
+	}
+
+	&--icons-text {
+		margin-bottom: 0;
+		margin-left: 20px;
+		font-family: 'proxima_nova_ltlight';
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+}
+
+.content__team {
+	width: 100%;
+	background: url("../img/dubai-landing/background-team.png") center no-repeat;
+	background-size: cover;
+	min-height: 787px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	&--header {
+		color: $black;
+		font-family: 'proxima_novathin';
+		font-size: 56px;
+		font-weight: 400;
+		line-height: 60px;
+	}
+	&--paragraph {
+		color: $black;
+		font-family: 'proxima_nova_ltlight';
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+		margin-top: 40px;
+	}
+	&--paragraph-sec {
+		color: $black;
+		font-family: 'proxima_nova_ltlight';
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 30px;
+		margin-top: 40px;
+	}
+}
+
+.footer {
+	min-height: 704px;
+	background-color: $black;
+	display: flex;
+	align-items: center;
+	position: relative;
+	&:after {
+		content: url("../img/dubai-landing/right-triangle.png");
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	&__main {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__content {
+		color: $footer-col;
+		font-family: 'proxima_novathin';
+		font-size: 39px;
+		font-weight: 400;
+		line-height: 60px;
+		max-width: 390px;
+		word-wrap: break-word;
+		&--uppercase {
+			text-transform: uppercase;
+		}
+		&--middle {
+			font-size: 56px;
+		}
+		&--last {
+			font-size: 56px;
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		font-family: 'proxima_nova_ltlight';
+		&--inputs {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&--name {
+			width: 255px;
+			height: 56px;
+			border-radius: 0;
+			padding-left: 20px;
+			&::placeholder {
+				font-family: 'proxima_nova_ltlight';
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 30px;
+			}
+		}
+		&--email {
+			width: 255px;
+			height: 56px;
+			border-radius: 0;
+			outline: none;
+			padding-left: 20px;
+			&::placeholder {
+				font-family: 'proxima_nova_ltlight';
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 30px;
+			}
+		}
+		&--textarea {
+			padding-top: 25px;
+			padding-left: 20px;
+			border-radius: 0;
+			&::placeholder {
+				font-family: 'proxima_nova_ltlight';
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 30px;
+			}
+		}
+
+		&--submit {
+			box-shadow: 0 4px 0 #c8141b;
+			background-color: $footer-red;
+			outline: none;
+			cursor: pointer;
+			border-radius: 0;
+			border: none;
+			color: $black;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 30px;
+			font-family: 'proxima_novabold';
+			&:hover {
+				box-shadow: 0 4px 0 #c8141b;
+				background-color: $footer-red;
+				color: $black;
+				text-transform: uppercase;
+				opacity: 0.8;
+			}
+
+		}
+		&--icon {
+			margin-right: 10px;
+			margin-top: -4px;
+		}
+	}
+}
